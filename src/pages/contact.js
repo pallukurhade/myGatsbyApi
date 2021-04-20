@@ -4,6 +4,7 @@ import * as Yup from 'yup';
 import Layout from "../components/layout"
 
 
+
 const ContactPage = () => {
 
 
@@ -49,24 +50,24 @@ const showForm = (
                     <div className={`form-group ${errors.firstName && touched.firstName && 'has-error'}`}>
                       <label htmlFor="firstName">First Name</label>
                       <Field name="firstName" className="form-control" placeholder="First Name" type="text" />
-                      { errors.firstName && touched.firstName && <span className="help-block">{errors.firstName}</span> }
+                      { errors.firstName && touched.firstName && <p className="help-block">{errors.firstName}</p> }
                     </div>
                     <div className={`form-group ${errors.lastName && touched.lastName && 'has-error'}`}>
                       <label htmlFor="lastName">Last Name</label>
                       <Field name="lastName" className="form-control" placeholder="Last Name" type="text" />
-                      { errors.lastName && touched.lastName && <span className="help-block">{errors.lastName}</span> }
+                      { errors.lastName && touched.lastName && <p className="help-block">{errors.lastName}</p> }
                     </div>
                   </div>
                   <div className="form-row">
                     <div className={`form-group ${errors.email && touched.email && 'has-error'}`}>
                       <label htmlFor="email">Email</label>
                       <Field name="email" className="form-control" placeholder="teddy@pixventive.com" type="email" />
-                       { errors.email && touched.email && <span className="help-block">{errors.email}</span> }
+                       { errors.email && touched.email && <p className="help-block">{errors.email}</p> }
                     </div>
                     <div className={`form-group ${errors.phoneNumber && touched.phoneNumber && 'has-error'}`}>
                       <label htmlFor="phoneNumber">Phone Number</label>
                       <Field name="phoneNumber" className="form-control" placeholder="Phone Number" type="text" />
-                      { errors.phoneNumber && touched.phoneNumber && <span className="help-block">{errors.phoneNumber}</span> }
+                      { errors.phoneNumber && touched.phoneNumber && <p className="help-block">{errors.phoneNumber}</p> }
                     </div>
                   </div>
                   <div className="form-row">
@@ -81,14 +82,16 @@ const showForm = (
   
   /* Shows the form and perform the validations */
   return (
-   <section className="hero">
-    <div className="contact-section">
+    <Layout> 
+     <section className="hero">
+     <div className="contact-section">
         <div className="contact-info">
          <h4 className="text-center">Contact Us</h4>
         </div>
        <div className="form-side">{submitted ? showThankYou : showForm}</div>
     </div>
    </section>   
+   </Layout> 
   );
 
 

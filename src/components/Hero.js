@@ -1,6 +1,5 @@
 import React, { useState } from 'react'
 import Modal from 'react-modal'
-import SEO from "../components/seo"
 import banner from "../images/okta-home-page-banner.svg"
 import eventLogo from "../images/oktane-21-logo.svg"
 

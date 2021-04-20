@@ -331,18 +331,20 @@ body label {
     border-radius: .25rem;
 	transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
 	flex: 2;
+	
 }
 
 .form-group {
 	width: 100%;
-    display: flex;
+	display: flex;
+	flex-flow: wrap;
 }
 
 
 .contact-section {
 	display: flex;
 	align-items: center;
-	width: 100%;
+	width: 80%;
 	max-width: 1280px;
 	margin: 0 auto;
 	box-sizing: border-box;
@@ -353,6 +355,12 @@ body label {
 
 .msg-confirm {
 	color: #00297a;
+}
+
+.help-block {
+    color: #00297a;
+    width: 100%;
+    text-align: end;
 }
 
 .contact-info {
@@ -442,6 +450,19 @@ body label {
 		line-height: 130%;
 		margin-top: 2rem;
 	}
+	.body label {
+		flex: 100%;
+		margin-top: 1rem;
+	 }
+
+	 .form-control{
+		flex: 100%;
+		margin-bottom: 2rem;
+	 }
+
+	 .contact-info h4{
+		 font-size: 3rem;
+	 }
 
 }
 
@@ -459,11 +480,7 @@ body label {
     max-width: 370px;
   }
 
-  .css-fsn9u5 {
-    margin-bottom: 0;
-    padding-bottom: 1rem;
-    width: 75%;
- }
+
 }
 /* Large devices (laptops/desktops, 992px and up) */
 @media only screen and (min-width: 992px) {
