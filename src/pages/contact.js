@@ -11,7 +11,7 @@ const ContactPage = () => {
 const [submitted, setSubmitted] = useState(false);
  
       
- // Yup Parameters
+ // Yup Parameters for all fields validations
 const validationSchema = Yup.object().shape({
         firstName: Yup.string().required('First name is required!'),
         lastName: Yup.string().required('Last name is required!'),
@@ -79,7 +79,7 @@ const showForm = (
   );
 
   
-  
+  /* Shows the form and perform the validations */
   return (
    <section className="hero">
     <div className="contact-section">
