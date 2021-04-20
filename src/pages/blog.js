@@ -27,7 +27,6 @@ const BlogPage = ({ data }) => (
       data.allposts.posts.data.map(post => {
          const { title, id, body} = post;
          const path = `/posts/${id}`;
-         console.log(post);
         return (
           <Post
             title={title}
