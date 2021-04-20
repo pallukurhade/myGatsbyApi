@@ -5,6 +5,18 @@ module.exports = {
     author: `@gatsbyjs`,
   },
   plugins: [
+    {
+      resolve: 'gatsby-source-graphql',
+      options: {
+        // This type will contain remote schema Query type
+        typeName: 'AllPosts',
+        // This is field under which it's accessible
+        fieldName: 'allposts',
+        // Url to query from
+        url:
+          'https://graphqlzero.almansi.me/api',
+      },
+    },
     `gatsby-plugin-react-helmet`,
     `gatsby-plugin-image`,
     {

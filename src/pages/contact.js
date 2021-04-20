@@ -2,6 +2,8 @@ import React, {useState } from 'react';
 import { Formik, Field, Form } from 'formik';
 import * as Yup from 'yup';
 import Layout from "../components/layout"
+import Banner from "../components/Banner"
+import pageImage from "../images/contact.jpg"
 
 
 
@@ -61,7 +63,7 @@ const showForm = (
                   <div className="form-row">
                     <div className={`form-group ${errors.email && touched.email && 'has-error'}`}>
                       <label htmlFor="email">Email</label>
-                      <Field name="email" className="form-control" placeholder="teddy@pixventive.com" type="email" />
+                      <Field name="email" className="form-control" placeholder="hello@gmail.com" type="email" />
                        { errors.email && touched.email && <p className="help-block">{errors.email}</p> }
                     </div>
                     <div className={`form-group ${errors.phoneNumber && touched.phoneNumber && 'has-error'}`}>
@@ -83,12 +85,18 @@ const showForm = (
   /* Shows the form and perform the validations */
   return (
     <Layout> 
-     <section className="hero">
+    <section>
+     <Banner 
+     style={{ backgroundImage: `url(${pageImage})`,
+     backgroundPosition: 'top',
+     backgroundSize: 'cover',
+     backgroundRepeat: 'no-repeat'
+     
+     }} 
+     pageTitle="Contact Us"
+     />
      <div className="contact-section">
-        <div className="contact-info">
-         <h4 className="text-center">Contact Us</h4>
-        </div>
-       <div className="form-side">{submitted ? showThankYou : showForm}</div>
+         <div className="form-side">{submitted ? showThankYou : showForm}</div>
     </div>
    </section>   
    </Layout> 

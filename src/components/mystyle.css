@@ -68,7 +68,39 @@ body img {
 	height: auto;
 }
 
+.banner {
+	height: 80vh;
+	background-position: center;
+	background-size: cover;
+	background-repeat: no-repeat;
+	position: relative;
+	justify-content: center;
+	color: #fff;
+	background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5));
+	display: flex;
+    padding: 0px;
+	
 
+}
+
+.banner-content {
+	display: flex;
+	align-items: center;
+	width: 100%;
+	max-width: 1280px;
+	margin: 0 auto;
+	box-sizing: border-box;
+	flex-direction: row;
+}
+
+.banner-title {
+	font-family: "ABCWhyte Book", "Helvetica Neue", sans-serif;
+	font-size: 3rem;
+	line-height: 120%;
+	margin-bottom: 2rem;
+	text-align: center;
+    width: 100%;
+}
 /*----------------
  	Hero Section
 ----------------*/
@@ -349,7 +381,7 @@ body label {
 	margin: 0 auto;
 	box-sizing: border-box;
 	flex-direction: column;
-	margin-top: 2rem;
+	margin-top: 4rem;
 	margin-bottom: 4rem;
 }
 
@@ -372,6 +404,56 @@ body label {
 
 }
 
+
+/*----------------
+ 	Blog Page
+----------------*/
+
+.our-blog-container {
+	color: #00297a;
+	background-color: #fff;
+}
+
+
+.our-blog-content {
+	margin: 0px auto;
+	padding-top: 6rem;
+	padding-bottom: 6rem;
+	width: 100%;
+	max-width: 1280px;
+	padding-left: 12px;
+	padding-right: 12px;
+	box-sizing: border-box;
+	z-index: 1;
+	display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.post {
+	width: 32%;
+	padding-bottom: 18%; 
+	margin-bottom: 2%; 
+	background-color: #fad28c;
+	border-radius: 0px 32px;
+	padding: 1.5rem 2rem 0.5rem;
+	min-height: 333px;
+	flex-grow: 1;
+	flex-shrink: 1;
+	flex: 1;
+	margin: 15px;
+}
+
+.post-title , .post-description {
+  margin-bottom: 3rem;
+}
+
+.post .btn {
+	width: 50%;
+    margin-left: auto;
+	margin-right: auto;
+	display: block;
+}
 
 
 
