@@ -1,0 +1,492 @@
+/*-------------
+ 	Topology
+-------------*/
+
+@font-face {
+	font-family: ABCWhyte Book;
+	src: url("../fonts/ABCWhyte-Book.woff2");
+}
+
+@font-face {
+	font-family: ABCWhyte Medium;
+	src: url("../fonts/ABCWhyte-Medium.woff2");
+}
+
+
+/*-------------
+ 	General
+-------------*/
+
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	display: flex;
+	min-height: 143vh;
+	flex-direction: column;
+	margin: 0;
+}
+
+body img {
+	display: block;
+}
+
+.btn {
+	display: inline-block;
+	text-align: center;
+	border: 2px solid;
+	border-radius: 0px;
+	padding: 12px 24px;
+	margin-bottom: 6px;
+	-webkit-transition: all 0.25s ease;
+	transition: all 0.25s ease;
+	font-family: "ABCWhyte Medium", "Helvetica Neue", sans-serif;
+	font-size: 1rem;
+	line-height: 140%;
+	color: #fff;
+	cursor: pointer;
+	border-color: #00297a;
+	background-color: #00297a;
+	min-width: 160px;
+}
+
+
+.btn:hover {
+    background-color: transparent;
+    color: #00297A;
+    -webkit-text-decoration: none;
+    text-decoration: none;
+    border: 2px solid;
+    border-color:#00297A;
+}
+
+.responsive-img {
+	width: 100%;
+	height: auto;
+}
+
+
+/*----------------
+ 	Hero Section
+----------------*/
+
+.hero {
+	position: relative;
+	justify-content: center;
+	color: #fff;
+	background-color: #fce8c5;
+	display: flex;
+	min-height: 700px;
+	flex-direction: column;
+	padding: 0px;
+}
+
+.hero .event-content .event-info {
+	flex: 0 1 60%;
+	padding: 6rem 1.5rem 6rem 0rem;
+}
+
+.hero .event-content .event-banner {
+	background: #fff;
+	right: 0;
+	position: absolute;
+	height: 100%;
+	width: 40%;
+	overflow: hidden;
+}
+
+.hero .event-content .event-banner img{
+	height:100%;
+}
+.event-content {
+	display: flex;
+	align-items: center;
+	width: 100%;
+	max-width: 1280px;
+	margin: 0 auto;
+	box-sizing: border-box;
+	flex-direction: row;
+}
+
+.hero button:nth-of-type(2) {
+	margin-left: 24px;
+}
+
+.hero h4 {
+	font-family: "ABCWhyte Book", "Helvetica Neue", sans-serif;
+	font-size: 3rem;
+	line-height: 120%;
+	color: #00297a;
+	margin-bottom: 2rem;
+}
+
+.event-banner:before {
+	height: 100%;
+	width: 67%;
+	right: auto;
+	bottom: 0;
+	content: "";
+	position: absolute;
+	background-color: #fad28c;
+	opacity: 0.5;
+}
+
+.event-logo {
+	max-width: 550px;
+	padding-bottom: 3rem;
+}
+
+.event-details {
+	max-width: 550px;
+}
+
+.event-logo:after {
+	content: "";
+	background-color: #b07700;
+	bottom: 0;
+	display: block;
+	height: 6px;
+	width: 100%;
+	margin-top: 2.5rem;
+}
+
+
+/*----------------
+ 	My Modal 
+----------------*/
+
+.myModal {
+	background-color: #fff;
+	padding-left: 48px;
+	padding-right: 48px;
+	padding-top: 24px;
+	padding-bottom: 48px;
+	border-radius: 5px;
+	max-height: 90vh;
+	align-items: center;
+	opacity: 1;
+	transform: scale(1);
+	-webkit-box-pack: start;
+	justify-content: flex-start;
+	max-height: 90vh;
+	max-width: 900px;
+	margin: 0 auto;
+}
+
+.Overlay {
+	position: fixed;
+	inset: 0px;
+	z-index: 999;
+	background: rgba(0, 0, 0, 0.75);
+	display: flex;
+	-webkit-box-pack: center;
+	justify-content: center;
+	-webkit-box-align: center;
+	align-items: center;
+	opacity: 1;
+	pointer-events: auto;
+}
+
+.myModal .btn {
+	margin-top: 40px;
+	margin-left: 40%;
+}
+
+
+/*----------------
+ 	Why Attend
+----------------*/
+
+.why-attend-section {
+	background-color: #D5EAEA;
+	padding-left: 15px;
+	padding-right: 15px;
+}
+
+.why-attend-content {
+	margin: 0px auto;
+	padding-top: 6rem;
+	padding-bottom: 6rem;
+	width: 100%;
+	max-width: 1280px;
+	padding-left: 12px;
+	padding-right: 12px;
+	box-sizing: border-box;
+	z-index: 1;
+}
+
+.why-attend {
+	position: relative;
+	flex-wrap: wrap;
+	margin-left: -15px;
+	margin-right: -15px;
+}
+
+.why-attend-title h2 {
+	color: #00297a;
+	border-top-width: 4px;
+	border-top-style: solid;
+	border-top-color: #00297a;
+	display: inline-block;
+	padding-top: 1rem;
+	font-family: "ABCWhyte Book", "Helvetica Neue", sans-serif;
+	font-size: 2rem;
+	line-height: 110%;
+	margin-bottom: 6rem;
+}
+
+.why-attend-us {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	column-gap: 30px;
+	flex-wrap: wrap;
+}
+
+.why-attend-us .video,
+.why-attend-us .why-attend-details {
+	flex: 1;
+}
+
+.why-attend-details p {
+	font-family: "ABCWhyte Book", "Helvetica Neue", sans-serif;
+	font-size: 1.25rem;
+	line-height: 130%;
+	color: #00297a;
+	margin-bottom: 1rem;
+}
+
+.why-attend-features {
+	margin-left: -15px;
+	margin-right: -15px;
+	position: relative;
+	flex-wrap: wrap;
+	display: flex;
+	align-items: stretch;
+	margin-top: 15px;
+}
+
+.card {
+	background-color: #00297a;
+	border-radius: 0px 32px;
+	padding: 1.5rem 2rem 0.5rem;
+	min-height: 333px;
+	color: #fff;
+	flex-grow: 1;
+	flex-shrink: 1;
+	flex: 1;
+	margin: 15px;
+}
+
+.card h5 {
+	font-family: "ABCWhyte Book", "Helvetica Neue", sans-serif;
+	font-size: 1.25rem;
+	line-height: 130%;
+	margin-bottom: 2rem;
+}
+
+.card p {
+	font-family: "ABCWhyte Book", "Helvetica Neue", sans-serif;
+	font-size: 1.25rem;
+	line-height: 130%;
+	margin-bottom: 1rem;
+}
+
+
+/*----------------
+ 	Contact Us
+----------------*/
+
+body label {
+    font-family: ABCWhyte Book,Helvetica Neue,sans-serif;
+    font-size: 1.25rem;
+    line-height: 130%;
+    color: #00297a;
+	margin-bottom: 1rem;
+	flex: 1;
+}
+
+.form-row {
+    display: flex;
+    flex-wrap: wrap;
+    margin-right: -5px;
+    margin-left: -5px;
+}
+
+.form-control {
+    display: block;
+    width: 100%;
+    height: calc(1.5em + .75rem + 2px);
+    padding: .375rem .75rem;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #495057;
+    background-color: #fff;
+    background-clip: padding-box;
+    border: 1px solid #ced4da;
+    border-radius: .25rem;
+	transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+	flex: 2;
+}
+
+.form-group {
+	width: 100%;
+    display: flex;
+}
+
+
+.contact-section {
+	display: flex;
+	align-items: center;
+	width: 100%;
+	max-width: 1280px;
+	margin: 0 auto;
+	box-sizing: border-box;
+	flex-direction: column;
+	margin-top: 2rem;
+	margin-bottom: 4rem;
+}
+
+.msg-confirm {
+	color: #00297a;
+}
+
+.contact-info {
+  margin-bottom: 2rem;
+}
+.form-row .btn {
+	margin-top: 40px;
+	margin-left: auto;
+
+}
+
+
+
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+	.hero {
+		min-height:280px;
+	}
+	.responsive-img {
+		max-height: 50vh;
+	}
+	.event-content {
+		-webkit-flex-direction: column;
+		flex-direction: column;
+	}
+	.hero h4 {
+		margin-bottom: 2rem;
+		font-family: "ABCWhyte Book", "Helvetica Neue", sans-serif;
+		font-size: 1.25rem;
+		line-height: 130%;
+		margin-bottom: 1rem;
+	}
+	.event-logo img {
+		margin: 0;
+		max-width: 280px;
+		width: 100%;
+	}
+	.event-logo:after {
+		width: 80%;
+		margin-top: 1.5rem;
+	}
+	.hero .event-content .event-info {
+		padding-right: 0;
+		padding-top: 3rem;
+		padding-left: 1rem;
+	}
+	.hero .event-content .event-banner {
+		position: relative;
+		top: 0;
+		right: 0;
+		display: block;
+		height: 50vh;
+		width: 100%;
+	}
+	.event-banner:before {
+		content: "";
+		position: absolute;
+		height: 67%;
+		width: 100%;
+		left: 0;
+		top: 0;
+		right: 0;
+		bottom: auto;
+		background-color: #fad28c;
+		opacity: 0.5;
+	}
+	.event-banner img {
+		width: 100%;
+	}
+	.event-banner:after {
+		content: "";
+		position: absolute;
+		height: 33%;
+		width: 100%;
+		left: 0;
+		bottom: 0;
+		background-color: #abd5d6;
+		opacity: 0.5;
+	}
+	.why-attend-us .video,
+	.why-attend-us .why-attend-details {
+		flex: 100%;
+	}
+	.why-attend-details p {
+		font-size: 1rem;
+		line-height: 130%;
+		margin-top: 2rem;
+	}
+
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+	.hero .event-content .event-info {
+		padding-left: 4rem;
+	}
+	
+   .hero h4 {
+	 font-size: 3rem;
+   }
+
+   .event-img {
+    max-width: 370px;
+  }
+
+  .css-fsn9u5 {
+    margin-bottom: 0;
+    padding-bottom: 1rem;
+    width: 75%;
+ }
+}
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+	.why-attend-title h2 {
+		font-size: 4rem;
+		margin-bottom: 6rem;
+	}
+	.hero h4 {
+		font-size: 2.5rem;
+	}
+	.event-logo:after {
+      width: 78%;
+	}
+}	
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+	.event-img {
+		max-width: 100%;
+	  }
+	  .hero .event-content .event-info {
+		padding-left: 0rem;
+	}
+	
+
+}
+

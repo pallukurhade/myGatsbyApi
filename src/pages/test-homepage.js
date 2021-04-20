@@ -1,17 +1,20 @@
 import * as React from "react"
 import { Link } from "gatsby"
 import { StaticImage } from "gatsby-plugin-image"
+import Hero from "../components/Hero";
+import Attend from "../components/Attend";
+
+
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 
-const IndexPage = () => (
+
+const Homepage = () => (
   <Layout>
     <SEO title="Home" />
-    <h1>Hi Team</h1>
-    <p>Welcome to your new Gatsby site.</p>
-    <p>Now go build something great.</p>
-   
+    <Hero/>
+    <Attend/>
   </Layout>
 )
 
-export default IndexPage
+export default Homepage
