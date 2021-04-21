@@ -53,14 +53,13 @@ body img {
 	min-width: 160px;
 }
 
-
 .btn:hover {
-    background-color: transparent;
-    color: #00297A;
-    -webkit-text-decoration: none;
-    text-decoration: none;
-    border: 2px solid;
-    border-color:#00297A;
+	background-color: transparent;
+	color: #00297A;
+	-webkit-text-decoration: none;
+	text-decoration: none;
+	border: 2px solid;
+	border-color: #00297A;
 }
 
 .responsive-img {
@@ -76,11 +75,9 @@ body img {
 	position: relative;
 	justify-content: center;
 	color: #fff;
-	background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5));
+	background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
 	display: flex;
-    padding: 0px;
-	
-
+	padding: 0px;
 }
 
 .banner-content {
@@ -99,8 +96,10 @@ body img {
 	line-height: 120%;
 	margin-bottom: 2rem;
 	text-align: center;
-    width: 100%;
+	width: 100%;
 }
+
+
 /*----------------
  	Hero Section
 ----------------*/
@@ -130,9 +129,10 @@ body img {
 	overflow: hidden;
 }
 
-.hero .event-content .event-banner img{
-	height:100%;
+.hero .event-content .event-banner img {
+	height: 100%;
 }
+
 .event-content {
 	display: flex;
 	align-items: center;
@@ -333,37 +333,36 @@ body img {
 ----------------*/
 
 body label {
-    font-family: ABCWhyte Book,Helvetica Neue,sans-serif;
-    font-size: 1.25rem;
-    line-height: 130%;
-    color: #00297a;
+	font-family: ABCWhyte Book, Helvetica Neue, sans-serif;
+	font-size: 1.25rem;
+	line-height: 130%;
+	color: #00297a;
 	margin-bottom: 1rem;
 	flex: 1;
 }
 
 .form-row {
-    display: flex;
-    flex-wrap: wrap;
-    margin-right: -5px;
-    margin-left: -5px;
+	display: flex;
+	flex-wrap: wrap;
+	margin-right: -5px;
+	margin-left: -5px;
 }
 
 .form-control {
-    display: block;
-    width: 100%;
-    height: calc(1.5em + .75rem + 2px);
-    padding: .375rem .75rem;
-    font-size: 1rem;
-    font-weight: 400;
-    line-height: 1.5;
-    color: #495057;
-    background-color: #fff;
-    background-clip: padding-box;
-    border: 1px solid #ced4da;
-    border-radius: .25rem;
-	transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+	display: block;
+	width: 100%;
+	height: calc(1.5em + .75rem + 2px);
+	padding: .375rem .75rem;
+	font-size: 1rem;
+	font-weight: 400;
+	line-height: 1.5;
+	color: #495057;
+	background-color: #fff;
+	background-clip: padding-box;
+	border: 1px solid #ced4da;
+	border-radius: .25rem;
+	transition: border-color .15s ease-in-out, box-shadow .15s ease-in-out;
 	flex: 2;
-	
 }
 
 .form-group {
@@ -371,7 +370,6 @@ body label {
 	display: flex;
 	flex-flow: wrap;
 }
-
 
 .contact-section {
 	display: flex;
@@ -390,18 +388,18 @@ body label {
 }
 
 .help-block {
-    color: #00297a;
-    width: 100%;
-    text-align: end;
+	color: #00297a;
+	width: 100%;
+	text-align: end;
 }
 
 .contact-info {
-  margin-bottom: 2rem;
+	margin-bottom: 2rem;
 }
+
 .form-row .btn {
 	margin-top: 40px;
 	margin-left: auto;
-
 }
 
 
@@ -414,7 +412,6 @@ body label {
 	background-color: #fff;
 }
 
-
 .our-blog-content {
 	margin: 0px auto;
 	padding-top: 6rem;
@@ -426,14 +423,14 @@ body label {
 	box-sizing: border-box;
 	z-index: 1;
 	display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
+	flex-wrap: wrap;
+	justify-content: space-between;
 }
 
 .post {
 	width: 32%;
-	padding-bottom: 18%; 
-	margin-bottom: 2%; 
+	padding-bottom: 18%;
+	margin-bottom: 2%;
 	background-color: #fad28c;
 	border-radius: 0px 32px;
 	padding: 1.5rem 2rem 0.5rem;
@@ -444,23 +441,24 @@ body label {
 	margin: 15px;
 }
 
-.post-title , .post-description {
-  margin-bottom: 3rem;
+.post-title,
+.post-description {
+	margin-bottom: 3rem;
 }
 
 .post .btn {
 	width: 50%;
-    margin-left: auto;
+	margin-left: auto;
 	margin-right: auto;
 	display: block;
 }
 
 
-
 /* Extra small devices (phones, 600px and down) */
+
 @media only screen and (max-width: 600px) {
 	.hero {
-		min-height:280px;
+		min-height: 280px;
 	}
 	.responsive-img {
 		max-height: 50vh;
@@ -535,36 +533,34 @@ body label {
 	.body label {
 		flex: 100%;
 		margin-top: 1rem;
-	 }
-
-	 .form-control{
+	}
+	.form-control {
 		flex: 100%;
 		margin-bottom: 2rem;
-	 }
-
-	 .contact-info h4{
-		 font-size: 3rem;
-	 }
-
+	}
+	.contact-info h4 {
+		font-size: 3rem;
+	}
 }
 
+
 /* Medium devices (landscape tablets, 768px and up) */
+
 @media only screen and (min-width: 768px) {
 	.hero .event-content .event-info {
 		padding-left: 4rem;
 	}
-	
-   .hero h4 {
-	 font-size: 3rem;
-   }
-
-   .event-img {
-    max-width: 370px;
-  }
-
-
+	.hero h4 {
+		font-size: 3rem;
+	}
+	.event-img {
+		max-width: 370px;
+	}
 }
+
+
 /* Large devices (laptops/desktops, 992px and up) */
+
 @media only screen and (min-width: 992px) {
 	.why-attend-title h2 {
 		font-size: 4rem;
@@ -574,18 +570,18 @@ body label {
 		font-size: 2.5rem;
 	}
 	.event-logo:after {
-      width: 78%;
+		width: 78%;
 	}
-}	
+}
+
+
 /* Extra large devices (large laptops and desktops, 1200px and up) */
+
 @media only screen and (min-width: 1200px) {
 	.event-img {
 		max-width: 100%;
-	  }
-	  .hero .event-content .event-info {
+	}
+	.hero .event-content .event-info {
 		padding-left: 0rem;
 	}
-	
-
 }
-
