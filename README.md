@@ -1,2 +1,2 @@
-# myGatsbyApi
+# myGatsbyAPi
 Gatsby from source API
