@@ -3,7 +3,6 @@ import Modal from 'react-modal'
 import banner from "../images/okta-home-page-banner.svg"
 import eventLogo from "../images/oktane-21-logo.svg"
 
-
 const Hero = () => {
     
     const [showRegisterModal,setRegisterModal] = useState(false);
