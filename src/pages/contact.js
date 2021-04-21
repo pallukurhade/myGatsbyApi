@@ -3,12 +3,11 @@ import { Formik, Field, Form } from 'formik';
 import * as Yup from 'yup';
 import Layout from "../components/layout"
 import Banner from "../components/Banner"
-import pageImage from "../images/contact.jpg"
+import pageImage from "../images/contact-img.jpg"
 
 
 
 const ContactPage = () => {
-
 
 // Check Validation of form 
 const [submitted, setSubmitted] = useState(false);

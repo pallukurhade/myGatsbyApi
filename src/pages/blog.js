@@ -2,7 +2,7 @@ import React from "react"
 import Layout from "../components/layout"
 import { graphql} from "gatsby"
 import Post from "../components/post"
-import pageImage from "../images/blog.jpeg"
+import pageImage from "../images/blog-img.jpeg"
 import Banner from "../components/Banner"
 
 
